@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profil Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Section 1: Menu */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .brand {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Section 2: Judul di kiri, Gambar di kanan */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .hero-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .hero-image {
+            width: 600px;
+            height: 400px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+            font-weight: bold;
+        }
+
+        /* Section 3: Biodata dengan 6 Box (menggunakan Tabel) */
+        .biodata {
+            background-color: #fff;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .biodata table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .biodata td {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 33.33%;
+            background-color: #f9f9f9;
+            vertical-align: top;
+        }
+
+        /* Section 4: Portofolio */
+        .portofolio {
+            background-color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .portfolio-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .portfolio-box {
+            flex: 1;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+        .portfolio-img {
+            width: 350px;
+            height: 200px;
+            background-color: #ddd;
+            margin: 0 auto 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- a. Section 1: Menu -->
+    <header>
+        <div class="brand">Brand</div>
+        <nav>
+            <a href="#">Header</a>
+            <a href="#">Garis</a>
+            <a href="#">Portofolio</a>
+        </nav>
+    </header>
+
+    <!-- b. Section 2: Judul di kiri dan gambar di kanan -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Selamat Datang di Website Saya</h1>
+            <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+        </div>
+        <div class="hero-image">
+            600 &times; 400
+        </div>
+    </section>
+
+    <!-- c & e. Section 3: Biodata dengan 6 Box menggunakan HTML Table -->
+    <section class="biodata">
+        <h2>About Me</h2>
+        <p>A brief introduction about yourself</p>
+        <table>
+            <tr>
+                <td><strong>Full Name:</strong><br>Nama Lengkap Anda</td>
+                <td><strong>Education:</strong><br>Pendidikan Terakhir</td>
+                <td><strong>Pekerjaan:</strong><br>Pekerjaan Anda</td>
+            </tr>
+            <tr>
+                <td><strong>Contact:</strong><br>Email / No. HP</td>
+                <td><strong>Hobi:</strong><br>Hobi Anda</td>
+                <td><strong>Alamat:</strong><br>Alamat Domisili</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- d. Section 4: Portofolio -->
+    <section class="portofolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-img">350 &times; 200</div>
+                <p><strong>Proyek 1</strong><br>Deskripsi proyek 1</p>
+            </div>
+            <div class="portfolio-box">
+                <div class="portfolio-img">350 &times; 200</div>
+                <p><strong>Proyek 2</strong><br>Deskripsi proyek 2</p>
+            </div>
+            <div class="portfolio-box">
+                <div class="portfolio-img">350 &times; 200</div>
+                <p><strong>Proyek 3</strong><br>Deskripsi proyek 3</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
